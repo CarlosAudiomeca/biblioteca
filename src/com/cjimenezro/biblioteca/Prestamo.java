@@ -1,12 +1,12 @@
 package com.cjimenezro.biblioteca;
 
-public class Control {
+public class Prestamo {
 
     private Integer id;
 
-    private String book;
+    private Integer isbnBook;
 
-    private String user;
+    private Integer dniUser;
 
     private String lonaDate;
 
@@ -24,18 +24,18 @@ public class Control {
         this.id=id;
     }
 
-    public String getBook(){
-        return book;
+    public Integer getIsbnBook(){
+        return isbnBook;
     }
-    public void setBook(String book){
-        this.book=book;
+    public void setIsbnBook(Integer isbnBook){
+        this.isbnBook = isbnBook;
     }
 
-    public String getUser(){
-        return user;
+    public Integer getDniUser(){
+        return dniUser;
     }
-    public void setUser(String user){
-        this.user=user;
+    public void setDniUser(Integer dniUser){
+        this.dniUser = dniUser;
     }
 
     public String getLonaDate(){
