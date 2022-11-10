@@ -29,13 +29,13 @@ public class Main {
         System.out.println("Por favor introduce el ISBN del libro");
         libro.setIsbn(entrada.nextInt());
         System.out.println("Por favor introduce el titulo del libro");
-        libro.setTitle(entrada.next());
+        libro.setTitle(entrada.nextLine());
         System.out.println("Por favor introduce el autor del libro");
-        libro.setAuthor(entrada.next());
+        libro.setAuthor(entrada.nextLine());
         System.out.println("Por favor introduce el genero del libro");
-        libro.setGender(entrada.next());
+        libro.setGender(entrada.nextLine());
         System.out.println("Por favor introduce la fecha de publicación del libro");
-        libro.setPublicationDate(entrada.next());
+        libro.setPublicationDate(entrada.nextLine());
 
         System.out.println(libro.getIsbn());
         System.out.println(libro.getTitle());
@@ -47,13 +47,13 @@ public class Main {
         System.out.println("Por favor introduce el ID del autor");
         autor.setId(entrada.nextInt());
         System.out.println("Por favor introduce el nombre del autor");
-        autor.setName(entrada.next());
+        autor.setName(entrada.nextLine());
         System.out.println("Por favor introduce los apellidos del autor");
-        autor.setSurname(entrada.next());
+        autor.setSurname(entrada.nextLine());
         System.out.println("Por favor introduce la fecha de nacimiento del autor");
-        autor.setDateBrith(entrada.next());
+        autor.setDateBrith(entrada.nextLine());
         System.out.println("Por favor introduce el lugar de nacimiento del autor");
-        autor.setPlaceBirth(entrada.next());
+        autor.setPlaceBirth(entrada.nextLine());
 
         System.out.println(autor.getId());
         System.out.println(autor.getName());
@@ -65,9 +65,9 @@ public class Main {
         System.out.println("Por favor introduce el ID del genero");
         genero.setId(entrada.nextInt());
         System.out.println("Por favor introduce el nombre del genero");
-        genero.setName(entrada.next());
+        genero.setName(entrada.nextLine());
         System.out.println("Por favor introduce una pequeña descripcion del genero");
-        genero.setDescription(entrada.next());
+        genero.setDescription(entrada.nextLine());
 
         System.out.println(genero.getId());
         System.out.println(genero.getName());
@@ -77,15 +77,15 @@ public class Main {
         System.out.println("Por favor introduce el DNI del usuario");
         usuarios.setDni(entrada.nextInt());
         System.out.println("Por favor introduce el nombre del usuario");
-        usuarios.setName(entrada.next());
+        usuarios.setName(entrada.nextLine());
         System.out.println("Por favor introduce los apellidos del usuario");
-        usuarios.setSurname(entrada.next());
+        usuarios.setSurname(entrada.nextLine());
         System.out.println("Por favor introduce la direccion del usuario");
-        usuarios.setDirection(entrada.next());
+        usuarios.setDirection(entrada.nextLine());
         System.out.println("Por favor introduce el telefono del usuario");
-        usuarios.setTelephone(entrada.next());
+        usuarios.setTelephone(entrada.nextLine());
         System.out.println("Por favor introduce la provincia del usuario");
-        usuarios.setPopularion(entrada.next());
+        usuarios.setPopularion(entrada.nextLine());
 
         System.out.println(usuarios.getDni());
         System.out.println(usuarios.getName());
@@ -93,6 +93,24 @@ public class Main {
         System.out.println(usuarios.getDirection());
         System.out.println(usuarios.getTelephone());
         System.out.println(usuarios.getPopularion());
+
+        Prestamo prestamo = new Prestamo();
+        System.out.println("Por favor introduce el ID del prestamo");
+        prestamo.setId(entrada.nextInt());
+        System.out.println("Por favor introduce el ISBN del libro prestado");
+        prestamo.setIsbnBook(entrada.nextInt());
+        System.out.println("Por favor introduce el DNI del usuario que recibe el prestamo");
+        prestamo.setDniUser(entrada.nextInt());
+        System.out.println("Por favor introduce la fecha del prestamo");
+        prestamo.setLonaDate(entrada.nextLine());
+        System.out.println("Por favor introduce la fecha de devolucion del prestamo");
+        prestamo.setReturnDate(entrada.nextLine());
+
+        System.out.println(prestamo.getId());
+        System.out.println(prestamo.getIsbnBook());
+        System.out.println(prestamo.getDniUser());
+        System.out.println(prestamo.getLonaDate());
+        System.out.println(prestamo.getReturnDate());
 
     }
 }
